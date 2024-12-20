@@ -1,3 +1,7 @@
+## Mon cv réalisé avec Astro + Template et hébergé par Github   
+
+### Modifications pour l'hébergement sur github
+
 ## Print-friendly portfolio CV
 
 ![preview](https://github.com/user-attachments/assets/44c47034-06e4-412a-b9dd-014593b32215)

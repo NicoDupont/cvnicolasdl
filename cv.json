@@ -6,7 +6,7 @@
     "email": "nicolas.dupont@outlook.com",
     "phone": "-",
     "url": "https://johndoe.dev",
-    "summary": "Professionnel expérimenté dans le domaine de la gestion et de l’analyse des données, j’allie expertise technique et vision stratégique pour transformer des données brutes en insights exploitables.\n\nJ’utilise quotidiennement des outils avancés tels qu’Apache Airflow pour orchestrer des pipelines de données complexes, et je maîtrise des solutions comme Python, Apache Hop et Pentaho Data Integration pour concevoir et automatiser des flux de données efficaces. Par ailleurs, je suis compétent dans la création de tableaux de bord interactifs et de rapports stratégiques grâce à Pentaho BI, et je dispose d’une solide expertise en SQL, que j’utilise quotidiennement pour interroger et manipuler des bases de données volumineuses.\n\nMon expérience inclut la mise en œuvre de pipelines robustes, l’optimisation de processus ETL/ELT et la livraison de solutions de reporting qui améliorent la prise de décision au sein des entreprises.\n\nEngagé à soutenir la performance des organisations par l’innovation et l’efficacité, je m’efforce d’exploiter le potentiel des données pour résoudre des problèmes métier complexes et créer de la valeur durable.",
+    "summary": "Professionnel expérimenté dans le domaine de la gestion et de l’analyse des données, j’allie expertise technique et vision métier pour transformer des données brutes en information exploitables.\n\nJ’utilise quotidiennement des outils avancés tels qu’Apache Airflow pour orchestrer des pipelines de données complexes, et je maîtrise des solutions comme Python, Apache Hop et Pentaho Data Integration pour concevoir et automatiser des flux de données efficaces. Par ailleurs, je suis compétent dans la création de tableaux de bord interactifs et de rapports stratégiques grâce à Pentaho BI, et je dispose d’une solide expertise en SQL, que j’utilise quotidiennement pour interroger et manipuler des bases de données volumineuses.\n\nMon expérience inclut la mise en œuvre de pipelines robustes, l’optimisation de processus ETL/ELT et la livraison de solutions de reporting qui améliorent la prise de décision au sein des entreprises.\n\nEngagé à soutenir la performance des organisations par l’innovation et l’efficacité, je m’efforce d’exploiter le potentiel des données pour résoudre des problèmes métier complexes et créer de la valeur durable.",
     "theme": "default",
     "location": {
       "address": "",
@@ -30,72 +30,157 @@
   },
   "work": [
     {
-      "name": "Tech Startup",
-      "position": "Junior Web Developer",
-      "location_type": "On site",
-      "location": "Auckland, New Zealand",
-      "url": "https://techstartup.com",
-      "startDate": "2024-01-01",
+      "name": "Dispam",
+      "position": "Ingénieur BDD",
+      "location_type": "Sur Site",
+      "location": "Avignon, France",
+      "url": "https://www.dispam.fr/",
+      "startDate": "2018-03-01",
       "endDate": null,
       "summary": "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
       "highlights": [
         "Improved website performance by optimizing code"
       ],
       "responsibilities": [
-        "Collaborated with senior developers to design and implement web applications using modern JavaScript frameworks.",
-        "Assisted in debugging and optimizing front-end code to ensure smooth user experiences.",
-        "Participated in code reviews and contributed to improving coding standards within the team."
-      ],
-      "achievements": [
-        "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs."
+        "Conception, alimentation et maintenance des Datawarehouse.",
+        "Création de reports et dashboards pour répondre aux besoins statistiques et décisionnels.",
+        "Développement, automatisation et orchestration des pipelines de données internes et externes."
       ],
       "skills": [
-        "React",
-        "Tailwind",
-        "GitHub"
+        "SQL",
+        "PYTHON",
+        "PDI",
+        "HOP",
+        "BI",
+        "AIRFLOW"
       ]
     },
     {
-      "name": "Innovative Solutions",
-      "position": "Junior Software Developer",
-      "location_type": "Hybrid",
-      "location": "Wellington, New Zealand",
-      "url": "https://innovativesolutions.com",
-      "startDate": "2022-06-01",
-      "endDate": "2023-06-01",
+      "name": "Kapa-It pour Sopra-Steria",
+      "position": "Ingénieur Décisionnel",
+      "url": "https://kapa-it.fr/",
+      "location_type": "Sur Site",
+      "location": "Aix-En-Provence, France",
+      "startDate": "2017-06-01",
+      "endDate": "2018-03-01",
       "summary": "Assisting in the development and maintenance of software applications using Python and Django. Collaborating with cross-functional teams to ensure quality and timely delivery of software solutions.",
       "highlights": [
         "Contributed to a major project that streamlined internal workflows, improving efficiency by 30%"
       ],
       "responsibilities": [
-        "Developed and maintained backend services using Python and Django.",
-        "Worked closely with front-end developers to integrate user-facing elements with server-side logic.",
-        "Participated in daily stand-ups and bi-weekly sprint planning meetings to ensure alignment with project goals."
-      ],
-      "achievements": [
-        "Successfully implemented a feature that enhanced user authentication, improving security measures."
+        "Développements DataStage, SQL et SAS.",
+        "Qualifications et tests.",
+        "Analyses d'incidents."
       ],
       "skills": [
-        "Python",
-        "Django",
+        "DATASTAGE",
         "SQL",
-        "Git"
+        "SAS",
+        "VBA"
       ]
     },
     {
-      "name": "Web Agency",
-      "position": "Intern Web Developer",
-      "location_type": "Remote",
-      "location": "Sydney, Australia",
-      "startDate": "2022-06-01",
-      "endDate": "2022-12-01",
+      "name": "Creatis",
+      "position": "Ingénieur Etudes et Pilotage",
+      "url" : "https://www.creatis.fr/fr/index.html",
+      "location_type": "Sur Site",
+      "location": "Lille, France",
+      "startDate": "2014-09-01",
+      "endDate": "2017-06-01",
       "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
       "highlights": [
         "Completed several client projects successfully"
       ],
+      "responsibilities": [
+        "Développement et maintenance d’un datamart sous SAS pour le pilotage des indicateurs du risque curatif.",
+        "Refonte complète des indicateurs du risque curatif suite à la migration du système d’information (développement et automatisation).",
+        "Développement et automatisation de nouveaux indicateurs et d’outils d’aide à la décision.",
+        "Mise en place et calcul des bonus pour les conseillers",
+        "Analyse de données et recommandation sur le risque curatif"
+      ],
       "skills": [
-        "HTML",
-        "CSS"
+        "SAS",
+        "SQL",
+        "VBA",
+        "EXCEL",
+        "REPORTING"
+      ]
+    },
+    {
+      "name": "Capgemini",
+      "url": "https://www.capgemini.com/fr-fr/",
+      "position": "Consultant BI SAS",
+      "location_type": "Sur Site",
+      "location": "Lille, France",
+      "startDate": "2011-23-01",
+      "endDate": "2014-08-01",
+      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
+      "highlights": [
+        "Completed several client projects successfully"
+      ],
+      "responsibilities": [
+        "Développement et maintenance d’un datamart sous SAS pour le pilotage des indicateurs du risque curatif.",
+        "Refonte complète des indicateurs du risque curatif suite à la migration du système d’information (développement et automatisation).",
+        "Développement et automatisation de nouveaux indicateurs et d’outils d’aide à la décision.",
+        "Mise en place et calcul des bonus pour les conseillers",
+        "Analyse de données et recommandation sur le risque curatif"
+      ],
+      "skills": [
+        "SAS",
+        "SQL",
+        "BO",
+        "VBA",
+        "EXCEL"
+      ]
+    },
+    {
+      "name": "Daxon",
+      "position": "Chargé de fichier et de sélection",
+      "url": "https://www.daxon.fr/",
+      "location_type": "Sur Site",
+      "location": "Lille, France",
+      "startDate": "2010-05-01",
+      "endDate": "2011-11-01",
+      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
+      "highlights": [
+        "Completed several client projects successfully"
+      ],
+      "responsibilities": [
+        "Ciblage pour les campagnes mailing, emailing et de phoning (fidélisation & prospection).",
+        "Analyse des résultats des campagnes marketing.",
+        "Edition des reportings d’activité."
+      ],
+      "skills": [
+        "SAS",
+        "SPSS MODELER",
+        "NEOLANE",
+        "EXCEL"
+      ]
+    },
+    {
+      "name": "La Poste B2B (Alternance)",
+      "position": "Développeur Web",
+      "url": "https://www.daxon.fr/",
+      "location_type": "Sur Site",
+      "location": "Lille, France",
+      "startDate": "2011-23-01",
+      "endDate": "2014-08-01",
+      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
+      "highlights": [
+        "Completed several client projects successfully"
+      ],
+      "responsibilities": [
+        "Ciblage pour les campagnes mailing, emailing et de phoning (fidélisation & prospection).",
+        "Analyse des résultats des campagnes marketing.",
+        "Edition des reportings d’activité."
+      ],
+      "skills": [
+        "MYSQL",
+        "SQL",
+        "PHP",
+        "HTML/CSS",
+        "JQUERY",
+        "VBA"
       ]
     }
   ],
@@ -114,71 +199,88 @@
   ],
   "education": [
     {
-      "institution": "State University",
-      "url": "https://stateuniversity.edu",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2018-09-01",
-      "endDate": "2022-05-01",
-      "score": "3.8",
+      "institution": "Université de Lille - sciences et technologies",
+      "url": "https://www.univ-lille.fr/",
+      "area": "Licence professionnelle Statistique et Informatique Décisionnelle",
+      "studyType": "Licence",
+      "startDate": "2008-01-01",
+      "endDate": "2009-01-01",
+      "score": "Major",
       "courses": [
-        "CS101 - Introduction to Computer Science",
-        "CS102 - Data Structures"
-      ]
-    },
-    {
-      "institution": "Tech Institute",
-      "url": "https://techinstitute.edu",
-      "area": "Software Engineering",
-      "studyType": "Master",
-      "startDate": "2020-09-01",
-      "endDate": "2022-12-01",
-      "score": "3.9",
-      "courses": [
-        "SE201 - Advanced Software Development",
-        "SE202 - Software Architecture and Design"
-      ]
-    },
-    {
-      "institution": "City College",
-      "url": "https://citycollege.edu",
-      "area": "Information Technology",
-      "studyType": "Associate Degree",
-      "startDate": "2017-01-01",
-      "endDate": "2019-12-01",
-      "score": "3.7",
-      "courses": [
-        "IT101 - Networking Fundamentals",
-        "IT102 - Database Management Systems"
+        "Décisionnel"
       ]
     }
   ],
   "certificates": [
     {
-      "name": "Full Stack Web Development",
-      "date": "2023-05-01",
-      "issuer": "Online University",
-      "url": "https://onlineuniversity.com/certificates/fullstack"
+      "name": "Data Scientist Track with Python",
+      "date": "2017-11-01",
+      "issuer": "DataCamp",
+      "url": "https://www.datacamp.com/tracks/associate-data-scientist-in-python"
+    },
+    {
+      "name": "Data Analyst with Python Track",
+      "date": "2017-10-01",
+      "issuer": "DataCamp",
+      "url": "https://www.datacamp.com/tracks/data-analyst-with-python"
+    },
+    {
+      "name": "Data Analyst Path with Python",
+      "date": "2017-03-01",
+      "issuer": "Dataquest.io",
+      "url": "https://www.dataquest.io/path/data-analyst/"
     }
   ],
   "skills": [
+    {
+      "name": "DataWarehouse",
+      "level": "Expert",
+      "keywords": [
+        "Databases",
+        "SQL"
+      ]
+    },
+    {
+    "name": "Etl",
+    "level": "Expert",
+    "keywords": [
+    "Etl",
+    "Elt"
+    ]
+    },
+    {
+      "name": "Bi",
+      "level": "Expert",
+      "keywords": [
+        "Dashboards",
+        "Reports"
+      ]
+    },
+    {
+      "name": "Reports",
+      "level": "Expert",
+      "keywords": [
+        "Dashboards",
+        "Reports",
+        "Report Designer"
+      ]
+    }
+  ,
+    {
+      "name": "Dashboards",
+      "level": "Expert",
+      "keywords": [
+        "Dashboards",
+        "Reports",
+        "Pentaho Bi CDE"
+      ]
+    },
     {
       "name": "Sql",
       "level": "Expert",
       "keywords": [
         "db",
         "query"
-      ]
-    },
-    {
-      "name": "Git/Gitea",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Cicd",
-        "Action"
       ]
     },
     {
@@ -189,42 +291,48 @@
       ]
     },
     {
-      "name": "Apache Airflow",
+      "name": "Airflow",
       "level": "Intermediate",
       "keywords": [
         "Orchestration"
       ]
     },
     {
-      "name": "Apache Hop",
+      "name": "Hop",
       "level": "Expert",
       "keywords": [
         "workflow",
-        "pipeline"
+        "pipeline",
+        "Apache Hop"
       ]
     },
     {
-      "name": "Pentaho Data Integration",
+      "name": "Pdi",
       "level": "Expert",
       "keywords": [
         "Tache",
-        "Transformation"
+        "Transformation",
+        "Pentaho Data Integration"
       ]
     },
     {
-      "name": "Pentaho BI",
-      "level": "Expert",
-      "keywords": [
-        "Dashboards",
-        "Reports"
-      ]
-    },
-    {
-      "name": "SAS",
+      "name": "Sas",
       "level": "Expert",
       "keywords": [
         "SAS Base",
         "SAS Macro"
+      ]
+    },
+    {
+      "name": "Gitea",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Cicd",
+        "Action",
+        "Git"
       ]
     },
     {
@@ -236,11 +344,11 @@
       ]
     },
     {
-      "name": "Datawarehouse",
-      "level": "Expert",
+      "name": "JavaScript",
+      "level": "Beginner",
       "keywords": [
-        "Databases",
-        "SQL"
+        "Web Development",
+        "Frontend"
       ]
     }
   ],
@@ -270,7 +378,7 @@
       ]
     },
     {
-      "name": "Electronics",
+      "name": "Eléctronique",
       "keywords": [
         "DIY"
       ]
@@ -290,15 +398,18 @@
   ],
   "projects": [
     {
-      "name": "Personal Portfolio",
-      "isActive": false,
-      "description": "A personal portfolio website to showcase my projects and skills.",
+      "name": "Mes projets personnel",
+      "isActive": true,
+      "description": "Mes réalisations.",
       "highlights": [
-        "Built with React and Tailwind CSS",
-        "Includes a blog and contact form"
+        "Diy",
+        "Domotique",
+        "Eléctronique",
+        "Esphome",
+        "Partage"
       ],
-      "url": "https://johndoe.dev",
-      "github": "https://github.com"
+      "url": "https://github.com/NicoDupont",
+      "github": "https://github.com/NicoDupont"
     }
   ]
 }

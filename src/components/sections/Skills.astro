@@ -6,7 +6,7 @@ import JavaScript from "@/icons/javascript.astro";
 import TypeScript from "@/icons/type.astro";
 import React from "@/icons/react.astro";
 import Node from "@/icons/node.astro";
-import MySQL from "@/icons/sql.astro";
+import MySQL from "../../icons/Sql.astro";
 import Git from "@/icons/git.astro";
 import GitHub from "@/icons/GitHub.astro";
 import Tailwind from "@/icons/tailwind.astro";
@@ -18,6 +18,21 @@ import Kotlin from "@/icons/kotlin.astro";
 import Flutter from "@/icons/flutter.astro";
 import Figma from "@/icons/Figma.astro";
 import Gitlab from "@/icons/Gitlab.astro";
+import Sas from "@/icons/Sas.astro";
+import Mssql from "@/icons/Mssql.astro";
+import Python from "@/icons/Python.astro";
+import Airflow from "@/icons/Airflow.astro";
+import Gitea from "@/icons/Gitea.astro";
+import Php from "@/icons/Php.astro";
+import PentahoBi from "@/icons/Pentaho-Bi.astro";
+import Sql from "@/icons/Sql.astro";
+import DataWarehouse from "@/icons/DataWarehouse.astro";
+import Etl from "@/icons/Etl.astro";
+import Pdi from "@/icons/Pdi.astro";
+import Hop from "@/icons/Hop.astro";
+import Bi from "@/icons/Bi.astro";
+import Reports from "@/icons/Reports.astro";
+import Dashboards from "@/icons/Dashboards.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
 	HTML,
@@ -37,10 +52,25 @@ const SKILLS_ICONS: Record<string, any> = {
 	Flutter,
 	Figma,
 	Gitlab,
+	Sas,
+	Mssql,
+	Python,
+	Airflow,
+	Gitea,
+	Php,
+	PentahoBi,
+	Sql,
+	DataWarehouse,
+	Etl,
+	Pdi,
+	Hop,
+	Bi,
+	Reports,
+	Dashboards,
 };
 ---
 
-<Section className={Astro.props.className} title="Skills">
+<Section className={Astro.props.className} title="Compétences">
 	<ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
 		{
 			skills.map(({ name }) => {
