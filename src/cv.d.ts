@@ -132,8 +132,12 @@ interface Projects {
   github?: string;
 }
 
+//interface Interests {
+//  name: string;
+//  keywords: Array<string>;
+//}
+
 interface Interests {
-  name: string;
   keywords: Array<string>;
 }
 

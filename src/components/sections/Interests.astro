@@ -1,0 +1,30 @@
+
+---
+import Section from "../Section.astro";
+
+import { interests } from "@cv";
+---
+
+{(interests) &&  (
+<Section title="Loisirs">
+  {interests.map(({ keywords }) => {
+    return (
+    <div class="flex flex-col gap-1">
+      <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
+        {keywords.map(keyword => (
+          <li>{keyword}</li>
+        ))}
+      </ul>
+    </div>
+    )
+  })}
+</Section>
+
+  )}
+
+<style>
+    li::marker {
+        @apply text-skin-hue
+    }
+</style>
+
