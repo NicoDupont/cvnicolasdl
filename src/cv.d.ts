@@ -7,6 +7,7 @@ export interface CV {
   certificates: Array<Certificates>;
   publications: Array<Publications>;
   skills: Array<Skills>;
+  softSkills: Array<SoftSkills>;
   languages: Array<Languages>;
   interests: Array<Interests>;
   references: Array<References>;
@@ -20,6 +21,7 @@ interface Basics {
   email: string;
   phone: string;
   url: string;
+  cvpdf: string;
   summary: string;
   location: Location;
   profiles: Array<Profiles>;
@@ -62,6 +64,12 @@ interface Volunteer {
 }
 
 interface Skills {
+  name: string;
+  level: string;
+  keywords: Array<string>;
+}
+
+interface SoftSkills {
   name: string;
   level: string;
   keywords: Array<string>;

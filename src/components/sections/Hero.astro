@@ -8,8 +8,9 @@ import LinkedIn from "@/icons/LinkedIn.astro";
 import GitHub from "@/icons/GitHub.astro";
 import WorldMap from "@/icons/WorldMap.astro";
 import type { SocialIcon } from "@/types";
+import { Icon } from 'astro-icon/components';
 
-const { name, label, image, location, profiles, phone, email } = basics;
+const { name, label, image, location, profiles, phone, email, cvpdf } = basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
@@ -59,6 +60,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 						</div>
 					)
 				}
+				<!--
 				{
 					phone && (
 						<a href={`tel:${phone}`} title={`Call ${name} at ${phone}`} target="_blank" rel="noopener noreferrer">
@@ -66,6 +68,15 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 						</a>
 					)
 				}
+				-->
+				{
+					cvpdf && (
+						<a href={cvpdf} title='cv pdf nicolas dl' target="_blank" rel="noopener noreferrer">
+							<Icon name="mdi:file-pdf-outline" size="1.5em"/>
+						</a>
+					)
+				}
+
 				{
 					profiles.map(({ network, url }) => {
 						const Icon = SOCIAL_ICONS[network];

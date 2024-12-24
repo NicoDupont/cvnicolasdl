@@ -6,8 +6,9 @@
     "email": "nicolas.dupont@outlook.com",
     "phone": "-",
     "url": "https://johndoe.dev",
+    "cvpdf": "https://johndoe.dev/cvnicolasdl.pdf",
     "summary": "Professionnel expérimenté dans le domaine de la gestion et de l’analyse des données, j’allie expertise technique et vision métier pour transformer des données brutes en information exploitables.\n\nJ’utilise quotidiennement des outils avancés tels qu’Apache Airflow pour orchestrer des pipelines de données complexes, et je maîtrise des solutions comme Python, Apache Hop et Pentaho Data Integration pour concevoir et automatiser des flux de données efficaces. Par ailleurs, je suis compétent dans la création de tableaux de bord interactifs et de rapports stratégiques grâce à Pentaho BI, et je dispose d’une solide expertise en SQL, que j’utilise quotidiennement pour interroger et manipuler des bases de données volumineuses.\n\nMon expérience inclut la mise en œuvre de pipelines robustes, l’optimisation de processus ETL/ELT et la livraison de solutions de reporting qui améliorent la prise de décision au sein des entreprises.\n\nEngagé à soutenir la performance des organisations par l’innovation et l’efficacité, je m’efforce d’exploiter le potentiel des données pour résoudre des problèmes métier complexes et créer de la valeur durable.",
-    "theme": "default",
+    "theme": "green",
     "location": {
       "address": "",
       "postalCode": "84300",
@@ -336,6 +337,13 @@
       ]
     },
     {
+      "name": "Docker",
+      "level": "Beginner",
+      "keywords": [
+        "vm"
+      ]
+    },
+    {
       "name": "Php",
       "level": "Beginner",
       "keywords": [
@@ -352,6 +360,24 @@
       ]
     }
   ],
+  "softSkills": [
+    {
+      "name": "DataWarehouse",
+      "level": "Expert",
+      "keywords": [
+        "Databases",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Etl",
+      "level": "Expert",
+      "keywords": [
+        "Etl",
+        "Elt"
+      ]
+    }
+  ],
   "languages": [
     {
       "language": "Francais",
@@ -360,34 +386,6 @@
     {
       "language": "English",
       "fluency": "Intermediate"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Technology",
-      "keywords": [
-        "AI",
-        "Dev"
-      ]
-    },
-    {
-      "name": "Domotique",
-      "keywords": [
-        "DIY",
-        "Home Assistant"
-      ]
-    },
-    {
-      "name": "Eléctronique",
-      "keywords": [
-        "DIY"
-      ]
-    },
-    {
-      "name": "Bricolage",
-      "keywords": [
-        "DIY"
-      ]
     }
   ],
   "references": [
