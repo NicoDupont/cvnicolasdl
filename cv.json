@@ -364,13 +364,32 @@
   ],
   "softSkills": [
     {
-      "name": "Autonomie"
+      "name": "Autonomie",
+      "level": "Expert",
+      "keywords": [
+        "Autonomie"
+      ]
     },
     {
-      "name": "Confiance"
+      "name": "Confiance",
+      "level": "Expert",
+      "keywords": [
+        "Confiance"
+      ]
     },
     {
-      "name": "Prise d'initiative"
+      "name": "Initiative",
+      "level": "Expert",
+      "keywords": [
+        "Initiative"
+      ]
+    },
+    {
+      "name": "Priorisation",
+      "level": "Expert",
+      "keywords": [
+        "Priorisation"
+      ]
     }
   ],
   "languages": [
