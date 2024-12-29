@@ -53,7 +53,9 @@
         "PDI",
         "HOP",
         "BI",
-        "AIRFLOW"
+        "AIRFLOW",
+        "DOCKER",
+        "GIT"
       ]
     },
     {
@@ -362,30 +364,19 @@
   ],
   "softSkills": [
     {
-      "name": "DataWarehouse",
-      "level": "Expert",
-      "keywords": [
-        "Databases",
-        "SQL"
-      ]
+      "name": "Autonomie"
     },
     {
-      "name": "Etl",
-      "level": "Expert",
-      "keywords": [
-        "Etl",
-        "Elt"
-      ]
+      "name": "Confiance"
+    },
+    {
+      "name": "Prise d'initiative"
     }
   ],
   "languages": [
     {
-      "language": "Francais",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "English",
-      "fluency": "Intermediate"
+      "language": "Anglais",
+      "fluency": "(pro)"
     }
   ],
   "references": [

@@ -71,8 +71,6 @@ interface Skills {
 
 interface SoftSkills {
   name: string;
-  level: string;
-  keywords: Array<string>;
 }
 
 interface Awards {
