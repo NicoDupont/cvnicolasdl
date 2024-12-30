@@ -74,6 +74,7 @@ const SKILLS_ICONS: Record<string, any> = {
                 </div>
               )}
               <div class="mt-4  print:gap-0 flex flex-col gap-4 print:text-xs text-sm" x-data="{ expanded: false }">
+                <!--
                 {summary && (
                   <div class="flex flex-col gap-1">
                     <h4>Résumé:</h4>
@@ -88,12 +89,13 @@ const SKILLS_ICONS: Record<string, any> = {
                     </ul>
                   </div>
                 )}
+                -->
 
                 {(responsibilities || achievements) &&  (
-                <div class="md:after:from-skin-hue dark:md:after:to-skin-hue/0  flex relative flex-col max-sm:!h-auto print:!h-auto gap-4 print:gap-2 md:after:bg-gradient-to-t md:after:absolute md:after:bottom-0 md:after:w-full print:after:hidden md:after:h-12 md:after:content-[''] " :class="expanded ? 'after:hidden' : ''" x-show="expanded" x-collapse.min.50px>
+                <div class="md:after:from-skin-hue dark:md:after:to-skin-hue/0  flex relative flex-col max-sm:!h-auto print:!h-auto gap-4 print:gap-2 md:after:bg-gradient-to-t md:after:absolute md:after:bottom-0 md:after:w-full print:after:hidden md:after:h-12 md:after:content-[''] " :class="expanded ? 'after:hidden' : ''" x-show="expanded" x-collapse.min.100px>
                 {responsibilities && (
                   <div class="flex flex-col gap-1">
-                    <h4>Fonctions:</h4>
+                    <!--<h4>Fonctions:</h4>-->
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {responsibilities.map(responsibility => (
                         <li>{responsibility}</li>
