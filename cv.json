@@ -9,11 +9,11 @@
     "url": "https://johndoe.dev",
     "cvpdf": "https://johndoe.dev/cvnicolasdl.pdf",
     "summary": "Professionnel expérimenté dans le domaine de la gestion et de l’analyse des données, j’allie expertise technique et vision métier pour transformer des données brutes en information exploitables.\n\nJ’utilise quotidiennement des outils avancés tels qu’Apache Airflow pour orchestrer des pipelines de données complexes, et je maîtrise des solutions comme Python, Apache Hop et Pentaho Data Integration pour concevoir et automatiser des flux de données efficaces. Par ailleurs, je suis compétent dans la création de tableaux de bord interactifs et de rapports stratégiques grâce à Pentaho BI, et je dispose d’une solide expertise en SQL, que j’utilise quotidiennement pour interroger et manipuler des bases de données volumineuses.\n\nMon expérience inclut la mise en œuvre de pipelines robustes, l’optimisation de processus ETL/ELT et la livraison de solutions de reporting qui améliorent la prise de décision au sein des entreprises.\n\nEngagé à soutenir la performance des organisations par l’innovation et l’efficacité, je m’efforce d’exploiter le potentiel des données pour résoudre des problèmes métier complexes et créer de la valeur durable.",
-    "theme": "green",
+    "theme": "blue",
     "location": {
       "address": "",
       "postalCode": "84300",
-      "city": "Cavaillon",
+      "city": "Avignon / Aix-en-provence",
       "countryCode": "FR",
       "region": "France"
     },
@@ -116,7 +116,7 @@
       "position": "Consultant BI SAS",
       "location_type": "Sur Site",
       "location": "Lille, France",
-      "startDate": "2011-23-01",
+      "startDate": "2011-12-01",
       "endDate": "2014-08-01",
       "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
       "highlights": [
@@ -163,20 +163,20 @@
     },
     {
       "name": "La Poste B2B (Alternance)",
-      "position": "Développeur Web",
-      "url": "https://www.daxon.fr/",
+      "position": "Responsable base de données et développement",
+      "url": "https://www.laposte.fr/entreprise-collectivites",
       "location_type": "Sur Site",
       "location": "Lille, France",
-      "startDate": "2011-23-01",
-      "endDate": "2014-08-01",
-      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
+      "startDate": "2008-09-01",
+      "endDate": "2009-12-01",
+      "summary": "Apprentissage 1 an + CDD 3 mois.",
       "highlights": [
         "Completed several client projects successfully"
       ],
       "responsibilities": [
-        "Ciblage pour les campagnes mailing, emailing et de phoning (fidélisation & prospection).",
-        "Analyse des résultats des campagnes marketing.",
-        "Edition des reportings d’activité."
+        "Création d’applications VBA.",
+        "Création de formulaires, de mini sites web, d’outils de gestion et de tableaux de bords.",
+        "Ciblage des campagnes marketing."
       ],
       "skills": [
         "MYSQL",
@@ -184,7 +184,8 @@
         "PHP",
         "HTML/CSS",
         "JQUERY",
-        "VBA"
+        "VBA",
+        "ACCESS"
       ]
     }
   ],
