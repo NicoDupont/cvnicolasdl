@@ -1,20 +1,31 @@
 ---
 import Section from "../Section.astro";
-import { softSkills } from "@cv";
+import { softskills } from "@cv";
+import { Icon } from 'astro-icon/components';
 
+const MDI_ICONS = {
+	Priorisation: "mdi:chart-gantt",
+	Autonomie: "mdi:account-hard-hat-outline",
+	Team: "mdi:account-group",
+	Confiance: "mdi:handshake",
+	Initiative: "mdi:head-snowflake-outline",
+	Analyse: "mdi:file-find-outline",
+};
 ---
 
-<Section className={Astro.props.className} title="Compétences Douces">
+<Section className={Astro.props.className} title="">
+	<h1 class="font-semibold">Transverse :</h1>
 	<ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
 		{
-			softSkills.map(({ name }) => {
+			softskills.map(({ name }) => {
 				const iconName = name === "Next.js" ? "Next" : name;
-				const Icon = SKILLS_ICONS[iconName];
+				const mdi = MDI_ICONS[iconName] || "mdi:information-slab-box-outline";
+				const mdiicon = mdi.toString().toLowerCase();
 				const upperame = name.toUpperCase();
 
 				return (
 					<li class="border-skin-hue/20s bg-skin-button-accent/20s borders border-solids flex items-center gap-1 rounded-md px-0.1 py-0.1 text-xs text-skin-muted print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
-						{Icon && <Icon />} <span>{upperame}</span>
+						<Icon name={mdiicon} size="2em"/> <span>{upperame}</span>
 					</li>
 				);
 			})

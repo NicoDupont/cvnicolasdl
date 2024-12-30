@@ -10,7 +10,7 @@ import WorldMap from "@/icons/WorldMap.astro";
 import type { SocialIcon } from "@/types";
 import { Icon } from 'astro-icon/components';
 
-const { name, label, image, location, profiles, phone, email, cvpdf } = basics;
+const { name, label, image, location, age, profiles, phone, email, cvpdf } = basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
@@ -30,6 +30,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 		<div class="info">
 			<h1>{name}</h1>
 			<h2>{label}</h2>
+			<h2>{age} ans</h2>
 			<div class="flex items-center gap-2 pt-2 text-sm text-skin-muted">
 				<WorldMap />
 				{city}, {region}
@@ -88,12 +89,14 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 						);
 					})
 				}
+				<!--
 				<div class="no-print footer-button max-sm:hidden group flex h-8 w-9 cursor-pointer items-center justify-center rounded-md text-skin-hue hover:bg-skin-button-accent hover:text-skin-inverted [&>span]:hover:text-skin-inverted">
 					<svg xmlns="http://www.w3.org/2000/svg" class="icon h-6 w-6 icon-tabler icon-tabler-command"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 						<path d="M7 9a2 2 0 1 1 2 -2v10a2 2 0 1 1 -2 -2h10a2 2 0 1 1 -2 2v-10a2 2 0 1 1 2 2h-10"></path>
 					</svg>
 				</div>
+				-->
 			</footer>
 		</div>
 		<figure class="print:hidden w-fit relative">

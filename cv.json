@@ -5,6 +5,7 @@
     "image": "/me_avatar.jpg",
     "email": "nicolas.dupont@outlook.com",
     "phone": "-",
+    "age": "38",
     "url": "https://johndoe.dev",
     "cvpdf": "https://johndoe.dev/cvnicolasdl.pdf",
     "summary": "Professionnel expérimenté dans le domaine de la gestion et de l’analyse des données, j’allie expertise technique et vision métier pour transformer des données brutes en information exploitables.\n\nJ’utilise quotidiennement des outils avancés tels qu’Apache Airflow pour orchestrer des pipelines de données complexes, et je maîtrise des solutions comme Python, Apache Hop et Pentaho Data Integration pour concevoir et automatiser des flux de données efficaces. Par ailleurs, je suis compétent dans la création de tableaux de bord interactifs et de rapports stratégiques grâce à Pentaho BI, et je dispose d’une solide expertise en SQL, que j’utilise quotidiennement pour interroger et manipuler des bases de données volumineuses.\n\nMon expérience inclut la mise en œuvre de pipelines robustes, l’optimisation de processus ETL/ELT et la livraison de solutions de reporting qui améliorent la prise de décision au sein des entreprises.\n\nEngagé à soutenir la performance des organisations par l’innovation et l’efficacité, je m’efforce d’exploiter le potentiel des données pour résoudre des problèmes métier complexes et créer de la valeur durable.",
@@ -204,7 +205,7 @@
     {
       "institution": "Université de Lille - sciences et technologies",
       "url": "https://www.univ-lille.fr/",
-      "area": "Licence professionnelle Statistique et Informatique Décisionnelle",
+      "area": "Licence professionnelle Statistique et Informatique Décisionnelle en apprentissage (major de promo)",
       "studyType": "Licence",
       "startDate": "2008-01-01",
       "endDate": "2009-01-01",
@@ -267,8 +268,7 @@
         "Reports",
         "Report Designer"
       ]
-    }
-  ,
+    },
     {
       "name": "Dashboards",
       "level": "Expert",
@@ -278,6 +278,15 @@
         "Pentaho Bi CDE"
       ]
     },
+    {
+      "name": "Api",
+      "level": "Expert",
+      "keywords": [
+        "Api"
+      ]
+    }
+  ],
+  "techskills": [
     {
       "name": "Sql",
       "level": "Expert",
@@ -344,37 +353,14 @@
       "keywords": [
         "vm"
       ]
-    },
-    {
-      "name": "Php",
-      "level": "Beginner",
-      "keywords": [
-        "Web Development",
-        "Backend"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Beginner",
-      "keywords": [
-        "Web Development",
-        "Frontend"
-      ]
     }
   ],
-  "softSkills": [
+  "softskills": [
     {
       "name": "Autonomie",
       "level": "Expert",
       "keywords": [
         "Autonomie"
-      ]
-    },
-    {
-      "name": "Confiance",
-      "level": "Expert",
-      "keywords": [
-        "Confiance"
       ]
     },
     {
@@ -390,12 +376,33 @@
       "keywords": [
         "Priorisation"
       ]
+    },
+    {
+      "name": "Analyse",
+      "level": "Expert",
+      "keywords": [
+        "Analyse"
+      ]
+    },
+    {
+      "name": "Confiance",
+      "level": "Expert",
+      "keywords": [
+        "Confiance"
+      ]
+    },
+    {
+      "name": "Team",
+      "level": "Expert",
+      "keywords": [
+        "Team"
+      ]
     }
   ],
   "languages": [
     {
       "language": "Anglais",
-      "fluency": "(pro)"
+      "fluency": "capacité professionnelle"
     }
   ],
   "references": [
@@ -424,9 +431,10 @@
     {
       "keywords": [
         "Domotique",
-        "Electronique",
-        "Diy",
-        "Bricolage"
+        "Eléctronique",
+        "DIY",
+        "Dev Python/Php(Laravel)/Angular",
+        "Travaux"
       ]
     }
 

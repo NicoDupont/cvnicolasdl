@@ -2,6 +2,12 @@
 
 ### Modifications pour l'hébergement sur github
 
+- Ajout des icones mdi (https://icones.js.org/collection/mdi)
+- Ajouts des softskills
+- Ajouts langues
+- Modifications du layout
+- Suppression d'éléments de base
+
 ## Print-friendly portfolio CV
 
 ![preview](https://github.com/user-attachments/assets/44c47034-06e4-412a-b9dd-014593b32215)
