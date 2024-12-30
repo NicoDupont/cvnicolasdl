@@ -19,7 +19,8 @@ const MDI_ICONS = {
 		{
 			softskills.map(({ name }) => {
 				const iconName = name === "Next.js" ? "Next" : name;
-				const mdi = MDI_ICONS[iconName] || "mdi:information-slab-box-outline";
+				let mdi: any;
+				mdi = MDI_ICONS[iconName] || "mdi:information-slab-box-outline";
 				const mdiicon = mdi.toString().toLowerCase();
 				const upperame = name.toUpperCase();
 
