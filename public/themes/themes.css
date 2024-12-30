@@ -65,6 +65,7 @@
     --color-button-accent: 227, 77, 10;
     --color-button-accent-hover: 231, 121, 43;
     --color-button-muted: 26, 26, 26;
+
     [data-theme="blue"] {
       --color-text-base: 248, 250, 252;
       --color-text-muted: 148, 163, 184;
@@ -76,6 +77,7 @@
       --color-button-accent-hover: 0, 185, 255;
       --color-button-muted: 30, 41, 59;
     }
+
     [data-theme="red"] {
       --color-text-base: 231, 229, 228;
       --color-text-muted: 168, 162, 158;
@@ -85,8 +87,9 @@
       --color: 248, 113, 113;
       --color-button-accent: 248, 113, 113;
       --color-button-accent-hover: 220, 50, 70;
-      --color-button-muted: 120, 113, 108; 
+      --color-button-muted: 120, 113, 108;
     }
+
     [data-theme="green"] {
       --color-text-base: 230, 230, 230;
       --color-text-muted: 104, 124, 104;
@@ -98,6 +101,7 @@
       --color-button-accent-hover: 120, 220, 120;
       --color-button-muted: 34, 44, 34;
     }
+
     [data-theme="cyber"] {
       --color-text-base: 252, 255, 64;
       --color-text-muted: 125, 125, 125;
@@ -109,4 +113,5 @@
       --color-button-accent-hover: 0, 185, 255;
       --color-button-muted: 25, 81, 86;
     }
+  }
 }
