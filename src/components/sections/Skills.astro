@@ -27,6 +27,7 @@ import Confiance from "@/icons/Confiance.astro";
 import Team from "@/icons/Team.astro";
 import Analyse from "@/icons/Analyse.astro";
 import Priorisation from "@/icons/Priorisation.astro";
+import Cicd from "@/icons/Cicd.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
 	Sas,
@@ -52,16 +53,24 @@ const SKILLS_ICONS: Record<string, any> = {
 	Team,
 	Analyse,
 	Priorisation,
+	Cicd,
 };
 ---
 
 <Section className={Astro.props.className} title="Compétences">
-	<h1 class="font-semibold ring-skin-fill"><div class="absolute w-4 h-4 bg-skin-muted rounded-full mt-1 -translate-x+[0rem] ring print:hidden ring-skin-fill"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Métier&nbsp;<hr class="w-36 h-0.5 mx-auto my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-gray-700"></h1>
+	<div class="flex items-center space-x-3">
+		<div class="w-3 h-3 bg-skin-muted rounded-full ring print:hidden ring-skin-fill"></div>
+		<h1 class="font-semibold ring-skin-fill">Métier</h1>
+		<hr class="w-36 h-0.5 bg-gray-400 border-0 rounded dark:bg-gray-700">
+	</div>
 	<ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
 		{
 			skills.map(({ name }) => {
 				const iconName = name === "Next.js" ? "Next" : name;
 				const Icon = SKILLS_ICONS[iconName];
+				if (name=='DataWarehouse'){
+					name = 'Data-Warehouse';
+				}
 				const upperame = name.toUpperCase();
 
 				return (
@@ -72,7 +81,11 @@ const SKILLS_ICONS: Record<string, any> = {
 			})
 		}
 	</ul>
-	<h1 class="font-semibold ring-skin-fill"><div class="absolute w-4 h-4 bg-skin-muted rounded-full mt-1 -translate-x+[0rem] ring print:hidden ring-skin-fill"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Technique</h1>
+	<div class="flex items-center space-x-3">
+		<div class="w-3 h-3 bg-skin-muted rounded-full ring print:hidden ring-skin-fill"></div>
+		<h1 class="font-semibold ring-skin-fill">Technique</h1>
+		<hr class="w-36 h-0.5 bg-gray-400 border-0 rounded dark:bg-gray-700">
+	</div>
 	<ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
 		{
 			techskills.map(({ name }) => {
@@ -88,7 +101,11 @@ const SKILLS_ICONS: Record<string, any> = {
 			})
 		}
 	</ul>
-	<h1 class="font-semibold ring-skin-fill"><div class="absolute w-4 h-4 bg-skin-muted rounded-full mt-1 -translate-x+[0rem] ring print:hidden ring-skin-fill"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transverse</h1>
+	<div class="flex items-center space-x-3">
+		<div class="w-3 h-3 bg-skin-muted rounded-full ring print:hidden ring-skin-fill"></div>
+		<h1 class="font-semibold ring-skin-fill">Transverse</h1>
+		<hr class="w-36 h-0.5 bg-gray-400 border-0 rounded dark:bg-gray-700">
+	</div>
 	<ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
 		{
 			softskills.map(({ name }) => {
