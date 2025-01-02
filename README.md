@@ -1,12 +1,33 @@
 ## Mon cv réalisé avec Astro + Template et hébergé par Github   
 
-### Modifications pour l'hébergement sur github
+### Mes modifications
 
-- Ajout des icones mdi (https://icones.js.org/collection/mdi)
-- Ajouts des softskills
-- Ajouts langues
+- Ajouts des softskills, techskills, langues + des infos dans le basic
 - Modifications du layout
-- Suppression d'éléments de base
+- Suppressions d'éléments
+- Ajout des icones mdi (https://icones.js.org/collection/mdi) (non utilisé finalement)
+
+#### Hébergement Github
+
+Fichier -> astro.config.mjs  
+```typescript
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
+import icon from "astro-icon";
+
+// https://astro.build/config
+export default defineConfig({
+  site: 'https://NicoDupont.github.io',
+  base: 'cvnicolasdl',
+  trailingSlash: "always",
+  integrations: [tailwind(),icon()]
+});
+```
+
+#### Mémo
+
+- pnpm build
+- pnpm preview
 
 ## Print-friendly portfolio CV
 
