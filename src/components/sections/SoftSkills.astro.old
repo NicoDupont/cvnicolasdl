@@ -18,7 +18,7 @@ const MDI_ICONS = {
 	<ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
 		{
 			softskills.map(({ name }) => {
-				const iconName = name === "Next.js" ? "Next" : name;
+				let iconName = name === "Next.js" ? "Next" : name;
 				let mdi: any;
 				mdi = MDI_ICONS[iconName] || "mdi:information-slab-box-outline";
 				const mdiicon = mdi.toString().toLowerCase();

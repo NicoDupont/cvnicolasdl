@@ -45,18 +45,18 @@
         ""
       ],
       "responsibilities": [
-        "Conception, alimentation et maintenance des Datawarehouse.",
+        "Conception, alimentation et maintenance des Data-Warehouse.",
         "Création de reports et dashboards pour répondre aux besoins statistiques et décisionnels.",
         "Développement, automatisation et orchestration des pipelines de données internes et externes.",
         "Mise en place d'Apache Airflow et Apache Hop.",
-        "Référents DATA"
+        "Référent Data"
       ],
       "skills": [
-        "SQL",
+        "SQL/MSSQL",
         "PYTHON",
         "PDI",
         "HOP",
-        "BI",
+        "PENTAHO-BI",
         "AIRFLOW",
         "DOCKER",
         "GIT/CICD"
@@ -77,7 +77,8 @@
       "responsibilities": [
         "Développements DataStage, SQL et SAS.",
         "Qualifications et tests.",
-        "Analyses d'incidents."
+        "Analyses d'incidents.",
+        "Participation projet big data"
       ],
       "skills": [
         "DATASTAGE",
@@ -103,7 +104,8 @@
         "Refonte complète des indicateurs du risque curatif suite à la migration du système d’information (développement et automatisation).",
         "Développement et automatisation de nouveaux indicateurs et d’outils d’aide à la décision.",
         "Mise en place et calcul des bonus pour les conseillers",
-        "Analyse de données et recommandation sur le risque curatif"
+        "Analyse de données et recommandation sur le risque curatif",
+        "Garant des données mis à disposition des utilisateurs"
       ],
       "skills": [
         "SAS",
@@ -126,10 +128,10 @@
         ""
       ],
       "responsibilities": [
-        "Développement et maintenance d’un datamart sous SAS pour le pilotage des indicateurs du risque curatif.",
-        "Refonte complète des indicateurs du risque curatif suite à la migration du système d’information (développement et automatisation).",
-        "Développement et automatisation de nouveaux indicateurs et d’outils d’aide à la décision.",
-        "Mise en place et calcul des bonus pour les conseillers",
+        "Reprise du pilotage d’activité du risque curatif.",
+        "Développement des indicateurs pour le GIE du groupe Cofidis.",
+        "Développement de nouveaux indicateurs et d’outils d’aide à la décision pour le risque curatif.",
+        "Consolidation et amélioration du système d’information décisionnel",
         "Analyse de données et recommandation sur le risque curatif"
       ],
       "skills": [
@@ -280,13 +282,6 @@
         "Dashboards",
         "Reports",
         "Pentaho Bi CDE"
-      ]
-    },
-    {
-      "name": "Api",
-      "level": "Expert",
-      "keywords": [
-        "Api"
       ]
     }
   ],
@@ -447,9 +442,9 @@
     {
       "keywords": [
         "Domotique",
-        "Eléctronique",
-        "DIY",
-        "Dev Python/Php(Laravel)/Angular",
+        "Electronique",
+        "Projets Diy",
+        "Dev Python, Php(Laravel), Angular, Astro",
         "Travaux"
       ]
     }
