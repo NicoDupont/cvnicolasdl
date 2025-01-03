@@ -6,7 +6,8 @@ const { summary } = basics;
 ---
 
 <Section title="Présentation">
-	<p>
-		{summary}
+	<p class="justify-normal">
+		<!--{summary}-->
+		<Fragment set:html={summary}/>
 	</p>
 </Section>

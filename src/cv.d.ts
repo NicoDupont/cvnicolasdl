@@ -22,7 +22,7 @@ interface Basics {
   email: string;
   phone: string;
   age: string;
-  info: string;
+  permis: string;
   url: string;
   cvpdf: string;
   summary: string;
