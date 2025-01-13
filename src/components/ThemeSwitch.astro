@@ -21,10 +21,7 @@ import Theme from "@/icons/themeSwitch.astro";
 			<option value="light">Light</option>
 		</select>
 	</div>
-	-->
-
-
-
+-->
 	<div class="group/theme flex items-center gap-2">
 		<div class="flex flex-row justify-between toggle">
 			<label for="dark-toggle" class="flex items-center cursor-pointer">
@@ -34,11 +31,17 @@ import Theme from "@/icons/themeSwitch.astro";
 					<div class="dot absolute left-1 top-1 dark:bg-white bg-gray-800 w-6 h-6 rounded-full transition"></div>
 				</div>
 				<div class="ml-3 dark:text-white text-gray-900 font-medium">
-					Dark Mode
+					<svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M24.0033 4L29.2737 9.27038H38.7296V18.7263L44 23.9967L38.7296 29.2737V38.7296H29.2737L24.0033 44L18.7264 38.7296H9.27036V29.2737L4 23.9967L9.27036 18.7263V9.27038H18.7264L24.0033 4Z" fill="#2F88FF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M27 17C27 25 22 26 17 26C17 30 23.5 34 29 30C34.5 26 31 17 27 17Z" fill="#43CCF8" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
 				</div>
 			</label>
 		</div>
 	</div>
+
+
+
 
 
 	<style>
@@ -55,12 +58,11 @@ import Theme from "@/icons/themeSwitch.astro";
 
 	<script>
 		const select = document.getElementById("dark-toggle") as HTMLInputElement;
-		console.log(select.value)
-		const selectMode = ''
+		let selectMode = ''
 		const theme = localStorage.getItem("theme");
 		const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
-		if (select.value === 'on') {
+		if (select.checked) {
 			selectMode = "dark"
 		} else {
 			selectMode ="light"
@@ -82,7 +84,8 @@ import Theme from "@/icons/themeSwitch.astro";
 
 		select.addEventListener("change", (event: Event) => {
 			const select = event.target as HTMLInputElement;
-			if (select.value === 'on') {
+			console.log(select.checked)
+			if (select.checked) {
 				updateTheme("dark")
 			} else {
 				updateTheme("light")
