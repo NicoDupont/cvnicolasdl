@@ -1,5 +1,5 @@
 ---
-import Theme from "@/icons/themeSwitch.astro";
+//import Theme from "@/icons/themeSwitch.astro";
 ---
 
 <div class="no-print inline-flex items-center">
@@ -40,10 +40,6 @@ import Theme from "@/icons/themeSwitch.astro";
 		</div>
 	</div>
 
-
-
-
-
 	<style>
 		:global(.dark) {
 			color-scheme: dark;
@@ -58,14 +54,14 @@ import Theme from "@/icons/themeSwitch.astro";
 
 	<script>
 		const select = document.getElementById("dark-toggle") as HTMLInputElement;
-		let selectMode = ''
+		let selectMode;
 		const theme = localStorage.getItem("theme");
 		const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
 		if (select.checked) {
-			selectMode = "dark"
+			selectMode = "dark";
 		} else {
-			selectMode ="light"
+			selectMode ="light";
 		}
 
 		if (theme !== null) {
@@ -84,14 +80,12 @@ import Theme from "@/icons/themeSwitch.astro";
 
 		select.addEventListener("change", (event: Event) => {
 			const select = event.target as HTMLInputElement;
-			console.log(select.checked)
 			if (select.checked) {
 				updateTheme("dark")
 			} else {
 				updateTheme("light")
 			}
 		});
-
 
 		//const select = document.getElementById("themeSwitch") as HTMLSelectElement;
 		//const theme = localStorage.getItem("theme");
@@ -116,5 +110,6 @@ import Theme from "@/icons/themeSwitch.astro";
 		//	const select = event.target as HTMLSelectElement;
 		//	updateTheme(select.value);
 		//});
+
 	</script>
 </div>

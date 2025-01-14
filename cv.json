@@ -51,7 +51,7 @@
         "Développement, automatisation et orchestration des pipelines de données internes et externes.",
         "Migration vers Apache Airflow et Apache Hop.",
         "Mise en place CICD",
-        "Référent Data"
+        "Référent Data et Sql"
       ],
       "skills": [
         "SQL/MSSQL",
@@ -446,7 +446,7 @@
         "Domotique",
         "Electronique",
         "Projets Diy",
-        "Dev Python - Php(Laravel) - Angular - Astro",
+        "Dev Python - Php(Laravel) - Angular - Astro - Wordpress",
         "Travaux"
       ]
     }
