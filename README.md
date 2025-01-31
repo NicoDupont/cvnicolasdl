@@ -17,7 +17,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://NicoDupont.github.io',
+  site: 'https://ndl-cv.fr',
   base: 'cvnicolasdl',
   trailingSlash: "always",
   integrations: [tailwind(),icon()]
