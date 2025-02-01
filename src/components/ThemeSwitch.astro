@@ -54,15 +54,10 @@
 
 	<script>
 		const select = document.getElementById("dark-toggle") as HTMLInputElement;
-		let selectMode;
 		const theme = localStorage.getItem("theme");
 		const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
-		if (select.checked) {
-			selectMode = "dark";
-		} else {
-			selectMode ="light";
-		}
+		let selectMode: string;
 
 		if (theme !== null) {
 			selectMode = theme;
