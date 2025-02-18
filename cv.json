@@ -2,13 +2,13 @@
   "basics": {
     "name": "Nicolas Dupont Lombard",
     "label": "Data Enginneer / Analyst",
-    "image": "/me_avatar.jpg",
+    "image": "/cv/me_avatar.jpg",
     "email": "nicolas.dupont@outlook.com",
     "phone": "-",
     "age": "38",
     "permis": "Permis B",
     "url": "https://ndl-blog.fr",
-    "cvpdf": "/cvnicolasdl.pdf",
+    "cvpdf": "/cv/cvnicolasdl.pdf",
     "summary": "En 15 années d’expérience, j’ai développé une expertise solide dans la conception et la mise en œuvre de pipelines de données agnostiques. Ces pipelines transforment des données brutes ou déjà structurées en informations utilisables et fiables, répondant aux besoins variés de nos clients, prestataires et en interne pour automatiser au maximum les process.<br><br>Parallèlement, je maîtrise également la mise en place de data warehouses, de datamarts, ainsi que l’analyse des données. J’ai acquis une expérience significative dans la création de rapports et tableaux de bord statistiques et décisionnels, conçus pour accompagner les métiers supports, stratégiques et opérationnels dans leur prise de décision.<br><br>Passionné par le domaine des données, je m’engage à optimiser les processus et à améliorer les performances dans une dynamique d’amélioration continue. J’ai également pour habitude de réaliser des preuves de concept (PoC) pour tester et évaluer différentes solutions technologiques, dans le but de faire évoluer nos outils et méthodes de manière pertinente et innovante.",
 
     "theme": "blue",

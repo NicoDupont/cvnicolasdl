@@ -4,7 +4,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  //site: 'https://ndl-cv.fr',
+  //site: 'http://webbdd/wpblogndl',
   base: '/cv',
   output: 'static',
   trailingSlash: "always",
