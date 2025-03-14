@@ -10,7 +10,7 @@ import WorldMap from "@/icons/WorldMap.astro";
 import type { SocialIcon } from "@/types";
 import { Icon } from 'astro-icon/components';
 
-const { name, label, image, location, age, permis, profiles, phone, email, cvpdf } = basics;
+const { name, label, image, location, age, permis, profiles, phone, email, cvpdf, url } = basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
@@ -88,6 +88,14 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 							</a>
 						);
 					})
+				}
+
+				{
+					cvpdf && (
+						<a href={url} title='blog nicolas dl' target="_blank" rel="noopener noreferrer">
+							<Icon name="mdi:wordpress" size="1.5em"/>
+						</a>
+					)
 				}
 				<!--
 				<div class="no-print footer-button max-sm:hidden group flex h-8 w-9 cursor-pointer items-center justify-center rounded-md text-skin-hue hover:bg-skin-button-accent hover:text-skin-inverted [&>span]:hover:text-skin-inverted">
