@@ -5,9 +5,9 @@
 - Ajouts des softskills, techskills, langues + des infos dans le basic
 - Modifications du layout
 - Suppressions d'éléments
-- Ajout des icones mdi (https://icones.js.org/collection/mdi) (non utilisé finalement)
+- Ajout des icones mdi (https://icones.js.org/collection/mdi)
 
-#### Hébergement Github
+#### Hébergement sur mon site
 
 Fichier -> astro.config.mjs  
 ```typescript
@@ -22,13 +22,20 @@ export default defineConfig({
   integrations: [tailwind(),icon()]
 });
 ```
+#### Déploiement automatisé via une action github
+
+```yaml
+name: Deploy to GitHub Pages
+```
 
 #### Mémo
 
 - pnpm build
 - pnpm preview
 
-## Print-friendly portfolio CV
+## Basé sur : https://github.com/Smilesharks/dev-portfolio
+
+### Print-friendly portfolio CV
 
 ![preview](https://github.com/user-attachments/assets/44c47034-06e4-412a-b9dd-014593b32215)
 
