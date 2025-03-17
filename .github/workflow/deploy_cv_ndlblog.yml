@@ -1,0 +1,38 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: FTP Deploy sur o2switch dossier cv
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du repository
+        uses: actions/checkout@
+
+      - name: Setup Node.js and pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          cache: 'pnpm'
+        version: latest
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build project
+        run: pnpm build
+
+      - name: Deployer via FTP sur o2switch dossier cv
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          protocol: ftp  # Options possibles : ftp, ftps, sftp
+          port: 21  # Par défaut : 21 pour FTP, 990 pour FTPS, 22 pour SFTP
+          security: loose  # Options : loose, strict (strict = certificat SSL validé)
+          local-dir: dist/*
+          server-dir: /cv/
