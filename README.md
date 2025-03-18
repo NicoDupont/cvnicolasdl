@@ -1,4 +1,4 @@
-## Mon cv réalisé avec Astro + Template et hébergé par Github   
+## Mon cv réalisé avec Astro + Template
 
 ### Mes modifications
 
