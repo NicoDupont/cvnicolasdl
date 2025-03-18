@@ -40,5 +40,5 @@ jobs:
           protocol: ftp  # Options possibles : ftp, ftps, sftp
           port: 21  # Par défaut : 21 pour FTP, 990 pour FTPS, 22 pour SFTP
           security: loose  # Options : loose, strict (strict = certificat SSL validé)
-          local-dir: dist/*
+          local-dir: dist/
           server-dir: /cv/
