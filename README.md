@@ -22,10 +22,53 @@ export default defineConfig({
   integrations: [tailwind(),icon()]
 });
 ```
-#### Déploiement automatisé via une action github
+#### Déploiement automatisé via une action github sur le ftp de mon site web
 
 ```yaml
-name: Deploy to GitHub Pages
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: FTP Deploy sur o2switch dossier cv
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du repository
+        uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile=false
+
+      - name: Build project
+        run: pnpm build
+
+      - name: Deployer via FTP sur o2switch dossier cv
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          protocol: ftp  # Options possibles : ftp, ftps, sftp
+          port: 21  # Par défaut : 21 pour FTP, 990 pour FTPS, 22 pour SFTP
+          security: loose  # Options : loose, strict (strict = certificat SSL validé)
+          local-dir: dist/
+          server-dir: /cv/
 ```
 
 #### Mémo
