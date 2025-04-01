@@ -50,22 +50,24 @@
 			// Initialiser le thème
 			const themePreference = initTheme();
 
+			const sunicon = document.getElementById("sun-icon")
+			const moonicon = document.getElementById("moon-icon")
+
 			// Appliquer le thème préféré
 			if (themePreference === "dark") {
 				document.documentElement.classList.add("dark");
 				localStorage.setItem("theme", "dark");
-				document.getElementById("sun-icon").classList.add("hidden");
-				document.getElementById("moon-icon").classList.remove("hidden");
+				if (sunicon) sunicon.classList.add("hidden");
+				if (moonicon) moonicon.classList.remove("hidden");
 			} else {
 				document.documentElement.classList.remove("dark");
 				localStorage.setItem("theme", "light");
-				document.getElementById("sun-icon").classList.remove("hidden");
-				document.getElementById("moon-icon").classList.add("hidden");
+				if (sunicon) sunicon.classList.remove("hidden");
+				if (moonicon) moonicon.classList.add("hidden");
 			}
 
 			// toggle pour le dark mode
 			const themeToggle = document.getElementById("theme-toggle");
-			const themeToggleMobile = document.getElementById("theme-toggle-mobile");
 			const htmlElement = document.documentElement;
 
 			function toggleTheme() {
@@ -73,18 +75,18 @@
 					//console.log('remove dark');
 					htmlElement.classList.remove("dark");
 					localStorage.setItem("theme", "light");
-					document.getElementById("sun-icon").classList.remove("hidden");
-					document.getElementById("moon-icon").classList.add("hidden");
+					if (sunicon) sunicon.classList.remove("hidden");
+					if (moonicon) moonicon.classList.add("hidden");
 				} else {
 					//console.log('add dark');
 					htmlElement.classList.add("dark");
 					localStorage.setItem("theme", "dark");
-					document.getElementById("sun-icon").classList.add("hidden");
-					document.getElementById("moon-icon").classList.remove("hidden");
+					if (sunicon) sunicon.classList.add("hidden");
+					if (moonicon) moonicon.classList.remove("hidden");
 				}
 			}
 
-			themeToggle.addEventListener("click", toggleTheme);
+			if (themeToggle) themeToggle.addEventListener("click", toggleTheme);
 
 		});
 
