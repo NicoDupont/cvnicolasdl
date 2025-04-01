@@ -3,40 +3,16 @@
 ---
 
 <div class="no-print inline-flex items-center">
-	<!-- <div class="flex items-center gap-1">
-		<Theme />
-		<select name="themeSwitch" id="themeSwitch" class="block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 dark:text-gray-100 dark:ring-gray-700 sm:text-sm sm:leading-6">
-			<option value="system">System</option>
-			<option value="dark">Dark</option>
-			<option value="light">Light</option>
-		</select>
-	</div> -->
-
-	<!--
-	<div class="group/theme flex items-center gap-2">
-		<label for="themeSwitch" class="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out group-hover/theme:rotate-45"> <Theme /></label>
-		<select id="themeSwitch" name="themeSwitch" class="focus:ring-skin-hue ring-skin-muted block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-skin-base ring-1 ring-inset focus:ring-2 sm:text-sm sm:leading-6">
-			<option value="system">System</option>
-			<option value="dark">Dark</option>
-			<option value="light">Light</option>
-		</select>
-	</div>
--->
 	<div class="group/theme flex items-center gap-2">
 		<div class="flex flex-row justify-between toggle">
-			<label for="dark-toggle" class="flex items-center cursor-pointer">
-				<div class="relative">
-					<input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
-					<div class="block border-[1px] dark:border-white border-gray-900 w-14 h-8 rounded-full"></div>
-					<div class="dot absolute left-1 top-1 dark:bg-white bg-gray-800 w-6 h-6 rounded-full transition"></div>
-				</div>
-				<div class="ml-3 dark:text-white text-gray-900 font-medium">
-					<svg width="35" height="35" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M24.0033 4L29.2737 9.27038H38.7296V18.7263L44 23.9967L38.7296 29.2737V38.7296H29.2737L24.0033 44L18.7264 38.7296H9.27036V29.2737L4 23.9967L9.27036 18.7263V9.27038H18.7264L24.0033 4Z" fill="#2F88FF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-						<path d="M27 17C27 25 22 26 17 26C17 30 23.5 34 29 30C34.5 26 31 17 27 17Z" fill="#43CCF8" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-				</div>
-			</label>
+			<button id="theme-toggle" title="darkmode" class="p-2 rounded-full bg-transparent transition hover:scale-125 transition-transform duration-200">
+				<svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="orange" class="h-7 w-7">
+					<path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+				</svg>
+				<svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="h-6 w-6">
+					<path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd" />
+				</svg>
+			</button>
 		</div>
 	</div>
 
@@ -53,58 +29,64 @@
 	</style>
 
 	<script>
-		const select = document.getElementById("dark-toggle") as HTMLInputElement;
-		const theme = localStorage.getItem("theme");
-		const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
-		let selectMode: string;
-
-		if (theme !== null) {
-			selectMode = theme;
-		} else {
-			selectMode = systemTheme;
-		}
-
-		function updateTheme(value: string) {
-			const theme = value === "system" ? systemTheme : value;
-			document.documentElement.classList.remove("light", "dark");
-			document.documentElement.classList.add(theme);
-			localStorage.setItem("theme", value);
-		}
-		updateTheme(selectMode)
-
-		select.addEventListener("change", (event: Event) => {
-			const select = event.target as HTMLInputElement;
-			if (select.checked) {
-				updateTheme("dark")
-			} else {
-				updateTheme("light")
+		// Gestion du darkmode
+		// Charger le mode préféré depuis localStorage
+		document.addEventListener("DOMContentLoaded", function () {
+			function getSavedTheme() {
+				return localStorage.getItem('theme'); // Récupère la préférence enregistrée
 			}
+
+			// Charger le thème du système
+			function getSystemTheme() {
+				return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; // Récupère la préférence du système
+			}
+
+			function initTheme() {
+				const savedTheme = getSavedTheme();
+				return savedTheme ? savedTheme : getSystemTheme();
+			}
+
+			// Initialiser le thème
+			const themePreference = initTheme();
+
+			// Appliquer le thème préféré
+			if (themePreference === "dark") {
+				document.documentElement.classList.add("dark");
+				localStorage.setItem("theme", "dark");
+				document.getElementById("sun-icon").classList.add("hidden");
+				document.getElementById("moon-icon").classList.remove("hidden");
+			} else {
+				document.documentElement.classList.remove("dark");
+				localStorage.setItem("theme", "light");
+				document.getElementById("sun-icon").classList.remove("hidden");
+				document.getElementById("moon-icon").classList.add("hidden");
+			}
+
+			// toggle pour le dark mode
+			const themeToggle = document.getElementById("theme-toggle");
+			const themeToggleMobile = document.getElementById("theme-toggle-mobile");
+			const htmlElement = document.documentElement;
+
+			function toggleTheme() {
+				if (htmlElement.classList.contains("dark")) {
+					//console.log('remove dark');
+					htmlElement.classList.remove("dark");
+					localStorage.setItem("theme", "light");
+					document.getElementById("sun-icon").classList.remove("hidden");
+					document.getElementById("moon-icon").classList.add("hidden");
+				} else {
+					//console.log('add dark');
+					htmlElement.classList.add("dark");
+					localStorage.setItem("theme", "dark");
+					document.getElementById("sun-icon").classList.add("hidden");
+					document.getElementById("moon-icon").classList.remove("hidden");
+				}
+			}
+
+			themeToggle.addEventListener("click", toggleTheme);
+
 		});
-
-		//const select = document.getElementById("themeSwitch") as HTMLSelectElement;
-		//const theme = localStorage.getItem("theme");
-		//const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-
-		//if (theme !== null) {
-		//	select.value = theme;
-		//} else {
-		//	select.value = systemTheme;
-		//}
-
-		//function updateTheme(value: string) {
-		//	const theme = value === "system" ? systemTheme : value;
-		//	document.documentElement.classList.remove("light", "dark");
-		//	document.documentElement.classList.add(theme);
-		//	localStorage.setItem("theme", value);
-		//}
-
-		//updateTheme(select.value);
-
-		//select.addEventListener("change", (event: Event) => {
-		//	const select = event.target as HTMLSelectElement;
-		//	updateTheme(select.value);
-		//});
 
 	</script>
 </div>
