@@ -9,7 +9,7 @@
     "permis": "",
     "url": "https://ndl-blog.net",
     "cvpdf": "/cv/cvnicolasdl.pdf",
-    "summary": "En 15 années d’expérience, j’ai développé une expertise solide dans la conception et la mise en œuvre de pipelines de données agnostiques. Ces pipelines transforment des données brutes ou déjà structurées en informations utilisables et fiables, répondant aux besoins variés de nos clients, prestataires et en interne pour automatiser au maximum les process.<br><br>Parallèlement, je maîtrise également la mise en place de data warehouses, de datamarts, ainsi que l’analyse des données. J’ai acquis une expérience significative dans la création de rapports et tableaux de bord statistiques et décisionnels, conçus pour accompagner les métiers supports, stratégiques et opérationnels dans leur prise de décision.<br><br>Passionné par le domaine des données, je m’engage à optimiser les processus et à améliorer les performances dans une dynamique d’amélioration continue. J’ai également pour habitude de réaliser des POCs pour tester et évaluer différentes solutions technologiques, dans le but de faire évoluer les outils et méthodes de manière pertinente et innovante.",
+    "summary": "Spécialiste de la donnée, j’interviens sur l’ensemble du cycle de vie, de l’extraction à la modélisation, en passant par la conception de pipelines transformant les données brutes en informations fiables et exploitables, la mise en place de data warehouses et de datamarts, ainsi que la production de rapports et tableaux de bord décisionnels, adaptés aux besoins métiers internes comme à ceux de nos clients et prestataires.<br><br>Une part essentielle de mon travail repose sur l’automatisation des traitements, afin de renforcer la fiabilité, la réactivité et l’efficacité des process.<br><br>Je mène régulièrement des expérimentations pour identifier des leviers d’optimisation et faire évoluer les outils et ou les pratiques dans une logique d’innovation et d’amélioration continue.",
 
     "theme": "blue",
     "location": {
@@ -51,7 +51,7 @@
         ""
       ],
       "responsibilities": [
-        "Conception, alimentation et maintenance des Data-Warehouse.",
+        "Conception, alimentation et maintenance des Data-Warehouses et Datamarts.",
         "Création de reports et dashboards pour répondre aux besoins statistiques et décisionnels.",
         "Développement, automatisation et orchestration des pipelines de données internes et externes.",
         "Migration vers Apache Airflow et Apache Hop.",
