@@ -51,20 +51,18 @@
         ""
       ],
       "responsibilities": [
-        "Conception, alimentation et maintenance des Data-Warehouses et Datamarts.",
+        "Modélisation, alimentation et maintenance des Data-Warehouses et Datamarts.",
         "Création de reports et dashboards pour répondre aux besoins statistiques et décisionnels.",
         "Développement, automatisation et orchestration des pipelines de données internes et externes.",
-        "Migration vers Apache Airflow et Apache Hop.",
-        "Mise en place CICD",
-        "Référent Data et Sql"
+        "Référent Data"
       ],
       "skills": [
         "SQL/MSSQL",
         "PYTHON",
-        "PDI",
-        "HOP",
-        "PENTAHO-BI",
         "AIRFLOW",
+        "HOP",
+        "DBT",
+        "PENTAHO-BI & PDI",
         "DOCKER",
         "GIT/CICD"
       ]
@@ -322,6 +320,13 @@
         "workflow",
         "pipeline",
         "Apache Hop"
+      ]
+    }, {
+      "name": "Dbt",
+      "level": "Expert",
+      "keywords": [
+        "Modélisation",
+        "Transformation"
       ]
     },
     {
