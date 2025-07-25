@@ -62,7 +62,7 @@
         "AIRFLOW",
         "HOP",
         "DBT",
-        "PENTAHO-BI & PDI",
+        "PENTAHO-BI",
         "DOCKER",
         "GIT/CICD"
       ]
