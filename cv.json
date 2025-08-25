@@ -51,9 +51,10 @@
         ""
       ],
       "responsibilities": [
+        "Développement, automatisation et orchestration des pipelines de données.",
+        "Développement d'un outil web pour suivre l'exécution des pipelines de données.",
         "Modélisation, alimentation et maintenance des Data-Warehouses et Datamarts.",
         "Création de reports et dashboards pour répondre aux besoins statistiques et décisionnels.",
-        "Développement, automatisation et orchestration des pipelines de données internes et externes.",
         "Référent Data"
       ],
       "skills": [
