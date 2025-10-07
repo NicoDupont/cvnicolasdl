@@ -30,6 +30,7 @@ import Priorisation from "@/icons/Priorisation.astro";
 import Cicd from "@/icons/Cicd.astro";
 import n8n from "@/icons/n8n.astro";
 import Dbt from "@/icons/Dbt.astro";
+import Modelisation from "@/icons/Modelisation.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
 	Sas,
@@ -58,6 +59,7 @@ const SKILLS_ICONS: Record<string, any> = {
 	Cicd,
   n8n,
   Dbt,
+  Modelisation,
 };
 ---
 
@@ -75,6 +77,9 @@ const SKILLS_ICONS: Record<string, any> = {
 				if (name=='DataWarehouse'){
 					name = 'Data-Warehouse';
 				}
+        if (name=='Modelisation'){
+          name = 'Modélisation';
+        }
 				const upperame = name.toUpperCase();
 
 				return (
