@@ -51,11 +51,10 @@
         ""
       ],
       "responsibilities": [
-        "Développement, automatisation et orchestration des pipelines de données.",
+        "Développement, automatisation et orchestration des pipelines de données. (ingestion, transformation, reverse etl)",
         "Développement d'un outil web pour suivre l'exécution des pipelines de données.",
         "Modélisation, alimentation et maintenance des Data-Warehouses et Datamarts.",
-        "Création de reports et dashboards pour répondre aux besoins statistiques et décisionnels.",
-        "Référent Data"
+        "Création de reports et dashboards pour répondre aux besoins statistiques et décisionnels."
       ],
       "skills": [
         "SQL/MSSQL",
@@ -265,6 +264,14 @@
     ]
     },
     {
+      "name": "Modelisation",
+      "level": "Expert",
+      "keywords": [
+        "medaillon",
+        "elt"
+      ]
+    },
+    {
       "name": "Bi",
       "level": "Expert",
       "keywords": [
@@ -464,8 +471,7 @@
         "Domotique",
         "Electronique",
         "Projets Diy",
-        "Dev Python - Php(Laravel) - Astro - Wordpress - n8n",
-        "Travaux"
+        "Travaux Maison Intérieur / Extérieur"
       ]
     }
 
