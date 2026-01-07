@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Nicolas Dupont Lombard",
-    "label": "Data Engineer | Analyst",
+    "label": "Analytics & Data Engineer",
     "image": "/cv/me_avatar_ia.png",
     "email": "nicolas.dupont@proton.me",
     "phone": "-",
@@ -40,7 +40,7 @@
   "work": [
     {
       "name": "Dispam",
-      "position": "Ingénieur BDD",
+      "position": "Analytics & Data Engineer",
       "location_type": "Sur Site",
       "location": "Avignon, France",
       "url": "https://www.dispam.fr/",
