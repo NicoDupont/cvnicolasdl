@@ -228,6 +228,30 @@
   ],
   "certificates": [
     {
+      "name": "Dlt-Hub Fundamentals",
+      "date": "2026-01-16",
+      "issuer": "dltHub",
+      "url": "https://dlthub.com/docs/tutorial/fundamentals-course"
+    },
+    {
+      "name": "Building With Apache Hop",
+      "date": "2026-01-16",
+      "issuer": "Know.Bi",
+      "url": "https://www.know.bi/slides/building-with-apache-hop-9"
+    },
+    {
+      "name": "Apache Hop Concepts and Best Practices",
+      "date": "2026-01-16",
+      "issuer": "Know.Bi",
+      "url": "https://www.know.bi/slides/apache-hop-concepts-and-best-practices-8"
+    },
+    {
+      "name": "Apache Hop Fundamentals",
+      "date": "2026-01-16",
+      "issuer": "Know.Bi",
+      "url": "https://www.know.bi/slides/apache-hop-fundamentals-4"
+    },
+    {
       "name": "Data Scientist Track with Python",
       "date": "2017-11-01",
       "issuer": "DataCamp",
