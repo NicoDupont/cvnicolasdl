@@ -62,7 +62,8 @@
         "AIRFLOW",
         "HOP",
         "DBT",
-        "PENTAHO-BI",
+        "METABASE",
+        "OPENMETADATA",
         "DOCKER",
         "GIT/CICD"
       ]
@@ -320,6 +321,14 @@
         "Reports",
         "Pentaho Bi CDE"
       ]
+    },
+    {
+      "name": "DataQuality",
+      "level": "Intermediate",
+      "keywords": [
+        "Test",
+        "Metadata"
+      ]
     }
   ],
   "techskills": [
@@ -362,15 +371,6 @@
       ]
     },
     {
-      "name": "Pdi",
-      "level": "Expert",
-      "keywords": [
-        "Tache",
-        "Transformation",
-        "Pentaho Data Integration"
-      ]
-    },
-    {
       "name": "n8n",
       "level": "Beginner",
       "keywords": [
@@ -395,6 +395,20 @@
         "Cicd",
         "Action",
         "Git"
+      ]
+    },
+    {
+      "name": "Metabase",
+      "level": "Intermediate",
+      "keywords": [
+        "Dashboard"
+      ]
+    },
+    {
+      "name": "Openmetadata",
+      "level": "Intermediate",
+      "keywords": [
+        "Data Quality"
       ]
     },
     {

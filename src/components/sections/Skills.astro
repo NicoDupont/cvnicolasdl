@@ -10,11 +10,9 @@ import Python from "@/icons/Python.astro";
 import Airflow from "@/icons/Airflow.astro";
 import Gitea from "@/icons/Gitea.astro";
 import Php from "@/icons/Php.astro";
-import PentahoBi from "@/icons/Pentaho-Bi.astro";
 import Sql from "@/icons/Sql.astro";
 import DataWarehouse from "@/icons/DataWarehouse.astro";
 import Etl from "@/icons/Etl.astro";
-import Pdi from "@/icons/Pdi.astro";
 import Hop from "@/icons/Hop.astro";
 import Bi from "@/icons/Bi.astro";
 import Reports from "../../icons/Reports.astro";
@@ -31,6 +29,9 @@ import Cicd from "@/icons/Cicd.astro";
 import n8n from "@/icons/n8n.astro";
 import Dbt from "@/icons/Dbt.astro";
 import Modelisation from "@/icons/Modelisation.astro";
+import Metabase from "@/icons/Metabase.astro";
+import Openmetadata from "@/icons/Openmetadata.astro";
+import DataQuality from "@/icons/Dataquality.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
 	Sas,
@@ -39,11 +40,9 @@ const SKILLS_ICONS: Record<string, any> = {
 	Airflow,
 	Gitea,
 	Php,
-	PentahoBi,
 	Sql,
 	DataWarehouse,
 	Etl,
-	Pdi,
 	Hop,
 	Bi,
 	Reports,
@@ -60,6 +59,9 @@ const SKILLS_ICONS: Record<string, any> = {
   n8n,
   Dbt,
   Modelisation,
+  Openmetadata,
+  Metabase,
+  DataQuality
 };
 ---
 
@@ -77,6 +79,9 @@ const SKILLS_ICONS: Record<string, any> = {
 				if (name=='DataWarehouse'){
 					name = 'Data-Warehouse';
 				}
+        if (name=='DataQuality'){
+          name = 'Data-Quality';
+        }
         if (name=='Modelisation'){
           name = 'Modélisation';
         }
